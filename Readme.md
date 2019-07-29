@@ -47,7 +47,7 @@ GPT_2_simple
 
 Run the [Jupyter notebook](https://github.com/marceld/FED-AI/blob/master/Scrape%20and%20clean%20Fed%20statements.ipynb) first to scrape and clean the data
 
-Afterwards use the [Colab notebook](https://github.com/marceld/FED-AI/blob/master/Fedspeak_Fine_tune_openAI's_GPT_2_model_with_Federal_Reserve_statements_of_the_past_25_years.ipynb) and install the Python wrapper for the OpenAI model:
+Afterwards use the [Colab notebook](https://github.com/marceld/FED-AI/blob/master/Fedspeak_Fine_tune_openAI's_GPT_2_model_with_Federal_Reserve_statements_of_the_past_25_years.ipynb) (based on [Max Woolf's work](https://github.com/minimaxir/gpt-2-simple)) and install the Python wrapper for the OpenAI model:
 ```Python
 pip install -q gpt-2-simple
 ```
@@ -105,7 +105,8 @@ This is what the model produced - without a prefix:
 
 Sounds like real statement the Fed could have made.
 
-It does get things wrong though. If we give it the prefix "President Trump"
+
+It sometimes does get things wrong though. If we give it the prefix "President Trump"
 
 > **President Trump** lifted the temporary restrictions placed on certain foreign investors and temporarily suspended the capital gains tax on the U.S. Treasury securities market.[...] In order to promote a smooth transition in markets, the Committee will gradually slow the pace of its purchases of both agency debt and agency mortgage-backed securities and anticipates that these transactions will be executed by the end of the first quarter of **2010**.
 
