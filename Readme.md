@@ -1,10 +1,13 @@
-# Creating alternative datasets for finance with Python — scraping, text-mining and sentiment analysis
+# Generating Federal Reserve Statements with AI
 
 ![ScreenShot](/screenshots/bernanke.png)
+
 
 This repo contains the code and data to train OpenAI's GPT-2 language model to learn how to create fake monetary policy statements like the ones regularly issued by the Federal Reserve.
 
 The open-source model can also mimic "Fedspeak" when given a few words with which a statement is meant to begin, e.g. "The global financial crisis demands..." and other prefixes.
+
+### Examples:
 
 
 > "**The global financial crisis demands** a rapid response of monetary policy. The Committee is concerned that this conflict could lead to a continuing deterioration in business conditions that could contribute to inflationary imbalances in the economy that could undermine the favorable performance of the economy and therefore supports the adoption of stringent measures…"
@@ -12,6 +15,8 @@ The open-source model can also mimic "Fedspeak" when given a few words with whic
 > "**Copper** futures have increased in recent weeks, and some analysts have raised concerns about the potential for inflationary imbalances that could undermine economic growth…"
 
 > "**Global risks** to the economic outlook have shifted in recent months. Inflation and longer-term inflation expectations remain well contained. The Committee perceives the upside and downside risks to the attainment of both sustainable growth and price stability for the next few quarters to be roughly equal…"
+
+### Overview
 
 In order to create AI-generated Fed Statements we need to go through the following steps:
 1. Data and tools - scrape and clean statements from the Fed website
@@ -75,6 +80,7 @@ gpt2.finetune(sess,
 ```
 
 That's what the fine-tuning should look like:
+
 ![ScreenShot](/screenshots/DL_train_10x.gif)
 
 
