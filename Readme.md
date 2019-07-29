@@ -113,7 +113,7 @@ It sometimes does get things wrong though. If we give it the prefix "President T
 The statement above starts with the highlighted prefix but the paragraph ends with 2010! The issue is obvious: Obama was president in 2010, not Trump. My guess is that the model learnt that Obama was president and it also knows that Trump is now president and hence might have swapped the names given that the context is similar.
 
 
-## Authors
+## Author
 
 * **Marcel Dietsch** - (https://github.com/marceld) and (https://twitter.com/MarcelDietsch)
 
